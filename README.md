@@ -1,7 +1,14 @@
 # Online-Chat-Project---Licence-2
 Création d'un chat en ligne - Projet réalisé au cours du premier semestre de licence informatique DANT
 
-`aa`
+Les différents modules à installer pour run le projet : 
+node.js est nécessaire
+
+`npm install`
+
+`npm install express`
+
+`node index.js` pour démarrer le serveur en ligne
 
 # Licence
 Copyright (c) 2021, Erwan Boukerche.
