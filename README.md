@@ -11,6 +11,6 @@ node.js est nécessaire
 `node index.js` pour démarrer le serveur en ligne
 
 # Licence
-Copyright (c) 2021, Erwan Boukerche.
+Copyright (c) 2021, Erwan Boukerche, Cyril Lin, Lorie Xue, Gad Zana
 
 Permission to modify and redistribute is granted under the terms of the GPLv3 license. See the file LICENSE for the full license.
