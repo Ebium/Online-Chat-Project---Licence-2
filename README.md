@@ -10,6 +10,8 @@ node.js est nécessaire
 
 `node index.js` pour démarrer le serveur en ligne
 
+Site hebergé en ligne grâce à Heroku à l'adresse suivante : https://kaiwaonline.herokuapp.com/
+
 # Licence
 Copyright (c) 2021, Erwan Boukerche, Cyril Lin, Lorie Xue, Gad Zana
 
