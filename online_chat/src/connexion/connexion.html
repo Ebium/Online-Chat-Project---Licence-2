@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Connexion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <link rel='stylesheet' href='connexion.css'>
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="container">
+    <div class="row">
+      <div class="row">
+        <div class="input-field col s12 center">
+          <h2 class="presentation">Connexion</h1>
+        </div>
+        <div class="input-field col s12 center">
+          <h5 class="presentation">Veuillez entrer votre mail ou votre pseudo ainsi que votre mot de passe:</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="idconnexion" type="text" class="validate" 
+          oninvalid="this.setCustomValidity('Identifiants incorrects')"
+          oninput="this.setCustomValidity('')" autocomplete="off" required>
+          <label for="idconnexion">Pseudo ou Adresse Mail</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="mdp" type="password" class="validate" minlength="6" 
+          oninvalid="this.setCustomValidity('Mot de passe incorrect')"
+          oninput="this.setCustomValidity('')" autocomplete="off" required>
+          <label for="mdp">Mot de passe</label>
+        </div>
+      </div>
+      <div class="input-field col s12">
+        <button class="btn btn-large btn-register waves-effect waves-light" type="submit" name="action" id="main_form">Envoyer
+          <i class="material-icons right">done</i>
+        </button>
+        </form>
+      </div>
+    </div>
+
+    <a href="../accueil/accueil.html" title="Login" class="ngl btn-floating btn-large waves-effect waves-light red"><i
+        class="material-icons">input</i></a>
+  </div>
+  </div>
+  <!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js'></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="connexion.js"></script>
+  
+
+
+
+</body>
+
+</html>
