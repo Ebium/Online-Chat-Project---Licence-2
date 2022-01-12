@@ -1,0 +1,20 @@
+{
+  "name": "chatonline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.16.X",
+    "node": "14.x",
+    "node-emoji": "^1.11.0",
+    "npm": "6.x",
+    "socket.io": "^4.4.1"
+  }
+}
