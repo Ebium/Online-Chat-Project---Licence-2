@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/n0XGvpG/logo-kaiwa.png" />
+  <meta charset="UTF-8">
+  <title>Connexion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <link rel='stylesheet' href='sans_pseudo.css'>
+
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html-->
+  <div class="container">
+    <div class="row">
+      <div >
+        <div class="row">
+          <div class="input-field col s12 center">
+            <h2 class="presentation">Connexion</h1>
+          </div>
+          <div class="input-field col s12 center">
+            <h5 class="presentation">Veuillez entrer un pseudo</h3>
+          </div>
+        </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="idconnexion" type="text" class="validate" autocomplete="off" required>
+              <label for="idconnexion">Pseudo</label>
+            </div>
+          </div>
+          <div class="input-field col s12">
+            <button id="main_form" class="btn btn-large btn-register waves-effect waves-light" type="submit" name="action">Se connecter
+              <i class="material-icons right">done</i>
+            </button>
+          </div>
+
+    </div>
+  </div>
+
+  <a href="https://kaiwaonline.herokuapp.com/" title="Login" class="ngl btn-floating btn-large waves-effect waves-light red"><i
+      class="material-icons">input</i></a>
+  </div>
+  </div>
+  <!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js'></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="sans_pseudo.js"></script>
+  
+</body>
+
+</html>

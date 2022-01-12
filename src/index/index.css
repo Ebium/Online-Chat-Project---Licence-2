@@ -1,0 +1,493 @@
+        @import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
+
+        :root {
+            --text_color: #54b8fa;
+            --border_color: rgb(236, 205, 118);
+            --bg_color: rgba(78, 78, 78, 0.5);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: italic 1.2em "Fira Sans", serif;
+        }
+
+        body {
+            background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/455886b2-bff1-4757-a195-e89f97a0b5e0/d6kvnyd-64268279-624b-4a5a-af3b-c4cbc0fcae25.jpg/v1/fill/w_1280,h_720,q_75,strp/stellar_collision_by_kuldarleement_d6kvnyd-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvNDU1ODg2YjItYmZmMS00NzU3LWExOTUtZTg5Zjk3YTBiNWUwXC9kNmt2bnlkLTY0MjY4Mjc5LTYyNGItNGE1YS1hZjNiLWM0Y2JjMGZjYWUyNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.vXRjzzU4jHH6Dd06KTMq71GfiSlobMIs56fpK1S2xDo');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        #top_right_buttons{
+            position: absolute;
+            display: flex;
+            top: 15px;
+            right: 15px;
+            z-index: 1000;
+        }
+
+        .top_right_button{
+            margin-right: 15px;
+            border-radius: 10px;
+            border-color: var(--border_color);
+            font-size: 1.5rem;
+            background-color: var(--bg_color);
+            color: rgb(170, 247, 230);
+            text-shadow:
+                0 0 4px var(--text_color),
+                0 0 11px var(--text_color),
+                0 0 19px var(--text_color),
+                0 0 40px var(--text_color),
+                0 0 80px var(--text_color),
+                0 0 90px var(--text_color),
+                0 0 100px var(--text_color),
+                0 0 150px var(--text_color);
+            font-family: 'Rajdhani', cursive;
+            cursor: pointer;
+            padding: 10px;
+            width: fit-content;
+            height: fit-content;
+        }
+
+
+
+        /*-------------------- logo + titre ------------------*/
+
+        #logo_title {
+            position: relative;
+            top: 10px;
+            margin-bottom: 10px;
+            background-color: var(--bg_color);
+            border: ridge var(--border_color);
+            border-width: 2px 5px 2px 0;
+            border-radius: 0px 1000px 1000px 0;
+            width: min-content;
+            display: flex;
+        }
+
+        #logo {
+            position: relative;
+            border-right: 2px solid var(--text_color);
+            border-radius: 1000px;
+            margin-right: 45px;
+        }
+
+        .brand {
+            position: relative;
+            width: 450px;
+            display: flex;
+            align-items: center;
+            color: rgb(170, 247, 230);
+            font-size: 3rem;
+            border-right: 4px ridge var(--text_color);
+            border-radius: 1000px;
+            font-family: 'Rajdhani', cursive;
+        }
+
+        .welcome {
+            margin-right: 19px;
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        /* Flickering animation */
+        @keyframes flicker {
+
+            0%,
+            18%,
+            22%,
+            25%,
+            53%,
+            57%,
+            100% {
+                text-shadow:
+                    0 0 4px var(--text_color),
+                    0 0 11px var(--text_color),
+                    0 0 19px var(--text_color),
+                    0 0 40px var(--text_color),
+                    0 0 80px var(--text_color),
+                    0 0 90px var(--text_color),
+                    0 0 100px var(--text_color),
+                    0 0 150px var(--text_color);
+            }
+
+            20%,
+            24%,
+            55% {
+                text-shadow: none;
+            }
+        }
+
+
+        /*-------------------- tchat box et box users ------------------*/
+
+
+        #titre_tchat_user {
+            position: relative;
+            height: 60px;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+
+        }
+
+        #titre_tchat {
+            position: absolute;
+            left: 50%;
+            height: 91%;
+            width: fit-content;
+            border: ridge var(--border_color);
+            border-width: 5px 3px 0 3px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        #titre_user {
+            position: absolute;
+            right: 9%;
+            height: 91%;
+            width: fit-content;
+            border: ridge var(--border_color);
+            border-width: 5px 3px 0 3px;
+            border-radius: 10px 10px 0 0;
+        }
+
+
+        .ttuc1 {
+            font-size: 40px;
+            color: rgb(170, 247, 230);
+            text-shadow:
+                0 0 4px var(--text_color),
+                0 0 11px var(--text_color),
+                0 0 19px var(--text_color),
+                0 0 40px var(--text_color),
+                0 0 80px var(--text_color),
+                0 0 90px var(--text_color),
+                0 0 100px var(--text_color),
+                0 0 150px var(--text_color);
+            font-family: 'Rajdhani', cursive;
+            border-top: 1px ridge var(--text_color);
+            border-radius: 10px;
+            padding: 0 10px;
+        }
+
+
+        #tchat_username {
+            position: relative;
+            height: 500px;
+            width: 100vw;
+            display: flex;
+        }
+
+
+
+        #tchatbox_border {
+            height: 100%;
+            width: 67.6%;
+            background-color: var(--bg_color);
+            border: thick double var(--border_color);
+            border-width: 2px 5px 2px 0;
+            border-radius: 0px 100px 100px 0;
+            padding-left: 7%;
+        }
+
+
+        #tchathour {
+            position: absolute;
+            top: 17px;
+            left: 30px;
+            height: 93.3%;
+            width: 7%;
+            color: rgba(214, 214, 214, 0.836);
+            font-family: Verdana, sans-serif;
+            font-size: 20px;
+            overflow: hidden;
+        }
+
+
+        #tchatboxb {
+            height: 100%;
+            width: 99.5%;
+            border-left: 4px ridge var(--text_color);
+            border-right: 4px ridge var(--text_color);
+            border-radius: 0 100px 100px 0;
+        }
+
+        #tchatboxa {
+            position: relative;
+            top: 15px;
+            height: 93.3%;
+            left: 15px;
+            width: 94.7%;
+            color: rgba(255, 255, 255, 0.87);
+            font-family: Verdana, sans-serif;
+            font-size: 20px;
+            overflow: hidden;
+        }
+
+
+        #userbox_border {
+            position: absolute;
+            right: 2.6%;
+            height: 100%;
+            width: 20%;
+            border: thick double var(--border_color);
+            border-width: 4px;
+            border-radius: 50px 2px 2px 50px;
+            background-color: var(--bg_color);
+        }
+
+        #userboxb {
+            height: 100%;
+            width: 100%;
+        }
+
+        #userboxa {
+            position: relative;
+            top: 15px;
+            height: 93.3%;
+            left: 9%;
+            width: 86%;
+            color: rgba(255, 255, 255, 0.897);
+            font-family: Verdana, sans-serif;
+            font-size: 20px;
+            overflow: auto;
+        }
+
+        #poutre {
+            position: absolute;
+            right: 0;
+            height: 100%;
+            width: 2.6%;
+        }
+
+        #poutre1 {
+            top: 20%;
+        }
+
+        #poutre2 {
+            bottom: 20%;
+        }
+
+        .poutre_c {
+            background-image: url("https://image.shutterstock.com/image-photo/black-concrete-wall-background-texture-260nw-1530082730.jpg");
+            position: absolute;
+            width: 100%;
+            height: 10%;
+            border: ridge rgb(87, 83, 40);
+            border-width: 4px 0 4px 0;
+            z-index: -10;
+        }
+
+        #messagerie {
+            position: relative;
+            top: 50px;
+            width: 100vw;
+            height: 50px;
+        }
+
+        #submitmsg {
+            position: absolute;
+            left: 60%;
+            height: 130%;
+            width: 150px;
+            background-image: url("https://media.istockphoto.com/videos/seamless-looping-animation-of-neon-arrows-appearing-and-disappearing-video-id1283490925?s=640x640");
+            background-size: 150px;
+            background-position: 14%;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            border-color: var(--border_color);
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
+
+        #usermsg {
+            background-image: url("https://image.shutterstock.com/image-photo/black-concrete-wall-background-texture-260nw-1530082730.jpg");
+            border: ridge rgb(87, 83, 40);
+            position: relative;
+            left: 5%;
+            padding: 0.5% 0 1.6% 1%;
+            width: 50%;
+            font-size: 20px;
+            color: rgb(170, 247, 230);
+            ;
+            text-shadow:
+                0 0 40px var(--text_color),
+                0 0 80px var(--text_color),
+                0 0 90px var(--text_color),
+                0 0 100px var(--text_color),
+                0 0 150px var(--text_color);
+        }
+
+
+        #pillier {
+            position: relative;
+            bottom: 0;
+            height: 1000%;
+        }
+
+
+        #pillier1 {
+            left: 13%;
+        }
+
+        #pillier2 {
+            left: 29.2%;
+        }
+
+        #pillier3 {
+            left: 45.2%;
+        }
+
+        .pilliers {
+            background-image: url("https://image.shutterstock.com/image-photo/black-concrete-wall-background-texture-260nw-1530082730.jpg");
+            height: 115%;
+            width: 50px;
+            position: absolute;
+            top: 0;
+            border: ridge rgb(73, 70, 35);
+            border-width: 0 4px 0 4px;
+        }
+
+
+
+
+
+
+
+
+
+        .rot_anim_1 {
+            -webkit-animation: rot_anim_1 0.6s ease-in-out both;
+            animation: rot_anim_1 0.6s ease-in-out both;
+        }
+
+        @-webkit-keyframes rot_anim_1 {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+            }
+
+            100% {
+                -webkit-transform: rotate(-720deg);
+                transform: rotate(-720deg);
+            }
+        }
+
+        @keyframes rot_anim_1 {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+            }
+
+            100% {
+                -webkit-transform: rotate(-720deg);
+                transform: rotate(-720deg);
+            }
+        }
+
+
+
+        .rot_anim_2 {
+            -webkit-animation: rot_anim_2 0.6s ease-in-out both;
+            animation: rot_anim_2 0.6s ease-in-out both;
+        }
+
+        @-webkit-keyframes rot_anim_2 {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+            }
+
+            100% {
+                -webkit-transform: rotate(720deg);
+                transform: rotate(720deg);
+            }
+        }
+
+        @keyframes rot_anim_2 {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+            }
+
+            100% {
+                -webkit-transform: rotate(720deg);
+                transform: rotate(720deg);
+            }
+        }
+
+
+
+        #chatbox,
+        #usersbox,
+        .backLine {
+            word-wrap: break-word;
+        }
+
+        .grad_bg {
+            background-image: linear-gradient(to left, transparent, var(--bg_color), transparent);
+        }
+
+        #mapub {
+            position: absolute;
+            right: 5px;
+            bottom: -100%;
+            z-index: 100000;
+        }
+
+
+
+        #image_login {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 100;
+            background-color: rgba(126, 126, 126, 0.555);
+        }
+
+        #title_login {
+            position: fixed;
+            z-index: 100;
+            top: 30%;
+            left: 34.2%;
+            border: 2px solid rgb(160, 160, 160);
+            cursor: pointer;
+        }
+
+        #login_input {
+            position: fixed;
+            z-index: 100;
+            top: 23%;
+            left: 34.2%;
+            width: 290px;
+            height: 50px;
+            border: 2px ridge var(--border_color);
+            background-color: rgba(160, 160, 160, 0.664);
+            color: whitesmoke;
+            text-align: center;
+            font-size: 20px;
+        }
+
+
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            width: 50%;
+        }
